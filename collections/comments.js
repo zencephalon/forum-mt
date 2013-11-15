@@ -1,9 +1,9 @@
 Comments = new Meteor.Collection("comments");
 
-createComment = function(conv_id, text, author) {
+createComment = function(conv_id, text, author_id) {
   Comments.insert({
     text: text,
-    author: author._id,
+    author: author_id,
     conv: conv_id,
     date: new Date()
   });

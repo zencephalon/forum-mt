@@ -6,7 +6,7 @@ createAuthor = function(user) {
   author['conversations'] = 0;
   author['comments'] = 0;
   author['subscriptions'] = {};
-  Authors.insert(author);
+  author['_id'] = Authors.insert(author);
   return author;
 };
 
