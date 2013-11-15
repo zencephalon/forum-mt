@@ -3,7 +3,7 @@
 Hello! Welcome to the village.
 
 {{#each conversations}}
-  <li>{{title}}</li>
+  <li><a href="{{pathFor 'conversation'}}">{{title}}</a></li>
 {{/each}}
 
 </template>
