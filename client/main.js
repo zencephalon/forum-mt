@@ -1,4 +1,4 @@
-Meteor.subscribe("authors");
+Meteor.subscribe("conversations");
 
 Accounts.ui.config({
   passwordSignupFields: 'USERNAME_AND_OPTIONAL_EMAIL'

@@ -1,5 +1,5 @@
 Meteor.startup(function () {
-  Meteor.publish("authors", function() {
-    return Authors.find({});
+  Meteor.publish("conversations", function() {
+    return Conversations.find({});
   });
 });
