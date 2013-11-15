@@ -1,0 +1,24 @@
+<template name="layout">
+  <head>
+    <title>Meteor Forum</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href='http://fonts.googleapis.com/css?family=Vollkorn:400italic,400' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body>
+    <div id="content">
+      {{loginButtons}}
+
+      {{yield}}
+      {{> footer}}
+    </div>
+  </body>
+</template>
+
+<template name="footer">
+  <footer>
+    <hr>
+    Welcome to Meteor Forum, made with love.
+    <br>
+  </footer>
+</template>
