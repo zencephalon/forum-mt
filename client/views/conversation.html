@@ -1,0 +1,10 @@
+<template name="conversation">
+<h2>{{conversation.title}}</h2>
+{{#each comments}}
+  {{> comment}}
+{{/each}}
+</template>
+
+<template name="comment">
+{{text}}
+</template>
